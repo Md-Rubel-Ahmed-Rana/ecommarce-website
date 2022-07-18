@@ -1,0 +1,301 @@
+
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Universal style */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header style start */
+
+header{
+    margin-top: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-title h1{
+    font-size: 30px;
+    padding-right: 237px;
+}
+
+nav > .menu-bar a{
+    /* background-color: brown; */
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
+
+nav > .menu-bar i{
+    margin-left: 15px;
+}
+
+nav > .menu-bar a:hover{
+    text-decoration: underline;
+}
+
+/* header style end */
+
+/* header Banner style start here */
+.header-banner{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+
+.header-info{
+    width: 40%;
+    padding-left: 110px;
+}
+.header-info h1{
+    font-size: 50px;
+}
+.header-info p{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.shop-name{
+    color: red;
+    font-size: 32px;
+}
+.header-info button{
+    font-size: 18px;
+    background-color: purple;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 20px #00000099;
+}
+
+.header-info button span i{
+    margin-left: 10px;
+}
+.header-profile{
+    width: 40%;
+}
+.header-profile img{
+    width: 70%;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #0000007d;
+    border-radius: 50%;
+}
+/* header Banner style end here */
+
+/* other agencies start here */
+.other-agencies{
+    width: 80%;
+    margin: 50px auto;
+}
+.all-agency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.all-agency img{
+    margin: 20px;
+}
+/* other agencies end here */
+
+/* products section start here */
+.product-section{
+    width: 80%;
+    margin: 40px auto;
+}
+
+.product-section h1{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product{
+    box-shadow: 5px 5px 30px #00000047;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product img{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.product i{
+    color: orange;
+}
+.product p{
+    margin: 0;
+}
+/* products section end here */
+
+
+ /* =================== */
+.see-more{
+    width: 80%;
+    margin: 0px auto;
+}
+.see-more-btn{
+    text-align: right;
+}
+.see-more-btn button{
+    background-color: #ff00d9f2;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+ /* =================== */
+
+
+/* Products featured section start here */
+.product-feature{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.features{
+    display: flex;
+}
+
+.feature-image{
+    margin-right: 30px;
+}
+
+.feature-info{
+    margin-left: 30px;
+}
+
+.feature-info h1{
+    font-size:40px ;
+}
+
+.feature-info > button{
+    background-color: #ff5094;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+.feature-info > button span i{
+    margin-left: 10px;
+}
+/* Products featured section end here */
+
+/* footer section start here */
+footer{
+    background-color: #000000d6;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.social-icon i{
+    margin: 5px;
+    background-color: #0a1258d4;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+/* footer section end here */
+
+
+/* ********************************** */
+/* ********************************** */
+/* Media Query */
+
+/* Mobile View */
+
+@media screen and (max-width: 568px) {
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav > .menu-bar a{
+        display: none;
+    }
+    .header-title h1{
+        font-size: 29px;
+        margin-left: 20px;
+        width: 70%;
+    }
+    nav > .menu-bar i{
+        padding-right: 15px;
+        font-size: 40px;
+    }
+
+
+    .header-banner{
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .header-profile{
+        width: 100%;
+    }
+    .header-info{
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header-info h1{
+        font-size: 50px;
+    }
+    .header-profile img{
+        width: 60%;
+        margin: auto;
+    }
+    .shop-name{
+        font-size: 14px;
+    }
+   
+
+
+
+    .other-agencies{
+        width: 100%;
+    }
+    .all-agency{
+        padding: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        width: 100%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
